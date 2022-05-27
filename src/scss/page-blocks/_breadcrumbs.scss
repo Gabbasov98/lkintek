@@ -1,0 +1,30 @@
+@import "../vars.scss";
+.breadcrumbs {
+    margin-top: 20px;
+    &__item {
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 17px;
+        position: relative;
+        display: inline;
+        color: #2D9AE9;
+        &:last-child {
+            color: #242321;
+        }
+        &:not(:first-child) {
+            margin-left: 34px;
+            &:before {
+                content: '';
+                position: absolute;
+                z-index: 1;
+                width: 24px;
+                height: 24px;
+                background-image: url(../img/brear-arrow.svg);
+                background-size: 100% auto;
+                top: -3px;
+                right: 100%;
+                margin-right: 5px;
+            }
+        }
+    }
+}

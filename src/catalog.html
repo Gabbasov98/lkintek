@@ -1,0 +1,407 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Каталог", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <section class='catalog'>
+                <div class='container'>
+                    <a href="" class="catalog__back blue-link">
+                        <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.90674 9.99997L11.9151 15.0083L13.0934 13.83L9.26007 9.99664L13.0934 6.1633L11.9151 4.99164L6.90674 9.99997Z" fill="#2D9AE9"/>
+                        </svg>
+                        <span>Все категории</span>
+                    </a>
+                    <div class='catalog__inner'>
+                        <div class="catalog__sidebar">
+                            <div class="filter">
+                                <div class="filter__mob">Фильтры</div>
+                                <div class="filter__groups">
+                                    <div class="filter__group filter__group--active">
+                                        <div class="filter__show">
+                                            <span class="filter__title">
+                                                Профессиональные моющие 
+                                                и дезинфицирующие средства
+                                            </span>
+                                        </div>
+                                        <div class="filter__hidden">
+                                            <div class="filter__links">
+                                                <a href="" class="filter__link">
+                                                    Антисептическая обработка рук <span>(15)</span>
+                                                </a>
+                                                <a href="" class="filter__link filter__link--active">
+                                                    Дезинфекция поверхностей <span>(129)</span>
+                                                </a>
+                                                <a href="" class="filter__link">
+                                                    Гигиена кухни <span>(20)</span>
+                                                </a>
+                                                <a href="" class="filter__link">
+                                                    Гигиена санузлов <span>(8)</span>
+                                                </a>
+                                                <a href="" class="filter__link">
+                                                    Универсальные моющие средства <span>(9)</span>
+                                                </a>
+                                                <a href="" class="filter__link">
+                                                    Личная гигиена  <span>(11)</span>
+                                                </a>
+                                                <a href="" class="filter__link">
+                                                    Средства для стирки <span>(15)</span>
+                                                </a>
+                                                <a href="" class="filter__link">
+                                                    Средства для ухода за полами <span>(15)</span>
+                                                </a>
+                                                <a href="" class="filter__link filter-hide">
+                                                    Средства для ухода за полами <span>(15)</span>
+                                                </a>
+                                            </div>
+                                            <button class="filter__more" data-hide-text="Скрыть">Показать все</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__group filter__group--active">
+                                        <div class="filter__show">
+                                            <span class="filter__title">Цена</span>
+                                            <button class="filter__btn">
+                                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.58299 7.09798C5.38347 7.09798 5.18397 7.0236 5.03185 6.87515L0.244982 2.20144C-0.0595253 1.90413 -0.0595253 1.4221 0.244982 1.12491C0.549366 0.827727 1.04297 0.827727 1.34751 1.12491L5.58299 5.26047L9.8185 1.12506C10.123 0.827871 10.6166 0.827871 10.9209 1.12506C11.2256 1.42224 11.2256 1.90427 10.9209 2.20158L6.13413 6.87529C5.98194 7.02377 5.78244 7.09798 5.58299 7.09798Z" fill="#44A8FF"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="filter__hidden">
+                                            <div class="filter__price">
+                                                <div id="range-slider" class="filter__price-range"></div>
+                                                <div class="filter__price-inputs">
+                                                    <div class="filter__price-group">
+                                                        <label for="">от</label>
+                                                        <input class="filter__price-input" value="3200" id="input-range0" min="0" max="999999" type="number">
+                                                    </div>
+                                                    <div class="filter__price-group">
+                                                        <label for="">до</label>
+                                                        <input class="filter__price-input" value="75000" id="input-range1" min="0" max="999999" type="number">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__group filter__group--active">
+                                        <div class="filter__show">
+                                            <span class="filter__title">Бренды</span>
+                                            <button class="filter__btn">
+                                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.58299 7.09798C5.38347 7.09798 5.18397 7.0236 5.03185 6.87515L0.244982 2.20144C-0.0595253 1.90413 -0.0595253 1.4221 0.244982 1.12491C0.549366 0.827727 1.04297 0.827727 1.34751 1.12491L5.58299 5.26047L9.8185 1.12506C10.123 0.827871 10.6166 0.827871 10.9209 1.12506C11.2256 1.42224 11.2256 1.90427 10.9209 2.20158L6.13413 6.87529C5.98194 7.02377 5.78244 7.09798 5.58299 7.09798Z" fill="#44A8FF"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="filter__hidden">
+                                            <div class="filter__items">
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>Бренд 1</label>
+                                                </div>
+                                                <div class="filter__item check">
+                                                    <input checked type='checkbox' />
+                                                    <label>Бренд 2</label>
+                                                </div>
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>Бренд 3</label>
+                                                </div>
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>Бренд 4</label>
+                                                </div>
+                                                <div class="filter__item check filter-hide">
+                                                    <input type='checkbox' />
+                                                    <label>Бренд 5</label>
+                                                </div>
+                                            </div>
+                                            <button class="filter__more" data-hide-text="Скрыть">Показать все</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__group filter__group--active">
+                                        <div class="filter__show">
+                                            <span class="filter__title">Размер</span>
+                                            <button class="filter__btn">
+                                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.58299 7.09798C5.38347 7.09798 5.18397 7.0236 5.03185 6.87515L0.244982 2.20144C-0.0595253 1.90413 -0.0595253 1.4221 0.244982 1.12491C0.549366 0.827727 1.04297 0.827727 1.34751 1.12491L5.58299 5.26047L9.8185 1.12506C10.123 0.827871 10.6166 0.827871 10.9209 1.12506C11.2256 1.42224 11.2256 1.90427 10.9209 2.20158L6.13413 6.87529C5.98194 7.02377 5.78244 7.09798 5.58299 7.09798Z" fill="#44A8FF"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="filter__hidden">
+                                            <div class="filter__items">
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>XS</label>
+                                                </div>
+                                                <div class="filter__item check">
+                                                    <input checked type='checkbox' />
+                                                    <label>S</label>
+                                                </div>
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>M</label>
+                                                </div>
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>L</label>
+                                                </div>
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>XL</label>
+                                                </div>
+                                                <div class="filter__item check filter-hide">
+                                                    <input type='checkbox' />
+                                                    <label>XXL</label>
+                                                </div>
+                                            </div>
+                                            <button class="filter__more" data-hide-text="Скрыть">Показать все</button>
+                                        </div>
+                                    </div>
+
+                                    <div class="filter__group filter__group--active">
+                                        <div class="filter__show">
+                                            <span class="filter__title">Цвет</span>
+                                            <button class="filter__btn">
+                                                <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                    <path d="M5.58299 7.09798C5.38347 7.09798 5.18397 7.0236 5.03185 6.87515L0.244982 2.20144C-0.0595253 1.90413 -0.0595253 1.4221 0.244982 1.12491C0.549366 0.827727 1.04297 0.827727 1.34751 1.12491L5.58299 5.26047L9.8185 1.12506C10.123 0.827871 10.6166 0.827871 10.9209 1.12506C11.2256 1.42224 11.2256 1.90427 10.9209 2.20158L6.13413 6.87529C5.98194 7.02377 5.78244 7.09798 5.58299 7.09798Z" fill="#44A8FF"/>
+                                                </svg>
+                                            </button>
+                                        </div>
+                                        <div class="filter__hidden">
+                                            <div class="filter__items">
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>
+                                                        <span class="filter__item-color"></span>
+                                                        <span>Белый</span>
+                                                    </label>
+                                                </div>
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>
+                                                        <span class="filter__item-color" style="background: #3B3B3B;"></span>
+                                                        <span>Черный</span>
+                                                    </label>
+                                                </div>
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>
+                                                        <span class="filter__item-color" style="background: #FF42B3;"></span>
+                                                        <span>Розовый</span>
+                                                    </label>
+                                                </div>
+                                                <div class="filter__item check">
+                                                    <input type='checkbox' />
+                                                    <label>
+                                                        <span class="filter__item-color" style="background: #FF4242;"></span>
+                                                        <span>Красный</span>
+                                                    </label>
+                                                </div>
+                                                <div class="filter__item check filter-hide">
+                                                    <input type='checkbox' />
+                                                    <label>
+                                                        <span class="filter__item-color" style="background: yellow;"></span>
+                                                        <span>Жёлтый</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                            <button class="filter__more" data-hide-text="Скрыть">Показать все</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <button class="filter__button filter__more-btn btn">Показать больше фильтров</button>
+                                <div class="filter__bottom">
+                                    <button class="filter__button filter__reset btn">Сбросить всё</button>
+                                </div>
+                            </div>
+                            <div class="filter-bg">
+                                <button class="filter__close">
+                                    <svg width="27" height="27" viewBox="0 0 27 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M19.7887 5.625L13.5 11.9137L7.21125 5.625L5.625 7.21125L11.9137 13.5L5.625 19.7887L7.21125 21.375L13.5 15.0862L19.7887 21.375L21.375 19.7887L15.0862 13.5L21.375 7.21125L19.7887 5.625Z" fill="white"/>
+                                    </svg>
+                                </button>
+                            </div>
+                        </div>
+                        <div class="catalog__content">
+                            <div class="catalog__banner2">
+                                <!-- <img src="img/flower4.svg" alt="" class="catalog__banner-flower catalog__banner-flower1">
+                                <img src="img/flower5.svg" alt="" class="catalog__banner-flower catalog__banner-flower2">
+                                <div class="catalog__banner-title">Профессиональные моющие и дезинфицирующие средства</div>
+                                <div class="catalog__banner-img">
+                                    <img src="img/pot2.webp" alt="">
+                                </div> -->
+                                <img src="img/banner4.webp" alt="">
+                            </div>
+
+                            <div class="catalog__nav">
+                                <div class="catalog__title">Товаров 23</div>
+                                <button class="catalog__filter-btn">
+                                    <svg width="21" height="21" viewBox="0 0 21 21" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M9.625 7.00006L17.5 7.00006" stroke="#041121" stroke-width="1.75" stroke-linecap="round"/>
+                                        <path d="M3.5 13.9999L12.25 13.9999" stroke="#041121" stroke-width="1.75" stroke-linecap="round"/>
+                                        <ellipse cx="6.125" cy="7.00006" rx="2.625" ry="2.625" transform="rotate(90 6.125 7.00006)" stroke="#041121" stroke-width="1.75" stroke-linecap="round"/>
+                                        <ellipse cx="14.875" cy="13.9999" rx="2.625" ry="2.625" transform="rotate(90 14.875 13.9999)" stroke="#041121" stroke-width="1.75" stroke-linecap="round"/>
+                                    </svg>
+                                    <span>Фильтры</span>
+                                </button>
+                                <div class="catalog__select">
+                                    <select name="" id="" class="custom-select">
+                                        <option selected hidden>Сортировка</option>
+                                        <option value="">Популярные</option>
+                                        <option value="">Новинки</option>
+                                        <option value="">Сначала дешёвые</option>
+                                        <option value="">Сначала дорогие</option>
+                                        <option value="">По размеру скидки</option>
+                                        <option value="">Высокий рейтинг</option>
+                                    </select>
+                                </div>
+                            </div>
+
+                            <div class="catalog__items">
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product2","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product3","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product4","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product5","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product6","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product7","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product8","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product9","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product10","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product","sale":""})
+                                </div>
+                                <div class="catalog__item">
+                                    @@include('components/cards/_catalog-card.html',{"img":"product2","sale":""})
+                                </div>
+                            </div>
+
+                            <div class="pagination">
+                                <a href="" class="pagination__btn btn pagination__btn--first">В начало</a>
+                                <div class="pagination__dots">...</div>
+                                <a href="" class="pagination__item">9</a>
+                                <a href="" class="pagination__item">10</a>
+                                <a href="" class="pagination__item pagination__item--prev">11</a>
+                                <a href="" class="pagination__item pagination__item--active">12</a>
+                                <a href="" class="pagination__item pagination__item--next">13</a>
+                                <a href="" class="pagination__item">14</a>
+                                <a href="" class="pagination__item">15</a>
+                                <a href="" class="pagination__item">16</a>
+                                <a href="" class="pagination__item">17</a>
+                                <div class="pagination__dots">...</div>
+                                <a href="" class="pagination__btn btn pagination__btn--last">Дальше</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="info">
+                <div class="container">
+                    <h3 class="info__title">ТД ХимТек Белгород</h3>
+                    <div class="info__inner">
+                        <div class="info__left">
+                            <p>ТД ХимТек — это официальное представительство компании «НПФ Химитек» на территории Белгорода и области. «Химитек» специализируется на выпуске продукции для дезинфекции. В наличие представлено широкое разнообразие средств. Предназначены
+                                они для следующих отраслей:</p>
+
+                            <p>предприятия общепита (кафе, пабы, клубы и другие); <br> агропромышленный комплекс; <br> предприятия промышленного типа; <br> клининговые службы; <br> станции технического обслуживания; <br> медицинские и санитарно-курортные
+                                учреждения.
+                            </p>
+                        </div>
+                        <div class="info__right">
+                            <p>Приобретая моющие средства для профессиональной уборки, а также грязезащитные покрытия, можно решить вопрос с чистотой помещений. Все загрязнения будут оперативно удаляться, так как скапливаться они будут на специальном слое.
+                                Ареал использования грязезащитной продукции — это торговые центры, мастерские, магазины, офисы, кинотеатры, автомобильные сервисы и другие места. Роль покрытий в деле поддержания чистоты помещений неоценима.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='consult'>
+                <div class='container'>
+                    <div class='consult__inner'>
+                        <img src="img/mail.svg" alt="" class="consult__mail">
+                        <div class="consult__title">Хотите получать актуальную информацию профессиональных моющих средствах?</div>
+                        <form action="" class="consult__form">
+                            <fieldset class='consult__form-group form-group'>
+                                <input type='email' placeholder="Ваша почта" />
+                            </fieldset>
+                            <button class="consult__btn btn btn-blue">Подписаться</button>
+                        </form>
+                        <div class="consult__hint">Небольшая рассылка 1 раз в неделю о новых разработках Кинтек</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='collection collection--catalog'>
+                <div class='container'>
+                    <div class='collection__top'>
+                        <div class="collection__title display2">Вы недавно смотрели</div>
+                    </div>
+
+                    <div class="collection__slider">
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product","sale":""})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product2","sale":""})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product3","sale":""})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product4","sale":""})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product5","sale":""})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product","sale":""})
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-button-prev'>
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.84375 2.57452L3.4184 6.99987L7.84375 11.4252L6.1674 13.1016L0.0657081 6.99987L6.1674 0.898171L7.84375 2.57452Z" fill="#44A8FF"/>
+                            </svg>
+                        </div>
+                        <div class='swiper-button-next'>
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.15625 2.57452L4.5816 6.99987L0.15625 11.4252L1.8326 13.1016L7.93429 6.99987L1.8326 0.898171L0.15625 2.57452Z" fill="#44A8FF"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

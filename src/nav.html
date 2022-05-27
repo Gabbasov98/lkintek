@@ -1,0 +1,43 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Главная", "description":"", "keywords":"",})
+
+
+<style>
+    .wrapper a {
+        font-size: 30px;
+    }
+    
+    .wrapper button {
+        margin-bottom: 25px;
+        min-width: 300px;
+        max-width: 400px;
+        padding: 0 50px;
+        height: 65px;
+    }
+</style>
+
+<body>
+
+    <div class="wrapper" style="padding: 50px;">
+        <a href="index.html" style="display: block; margin-bottom: 20px;">
+            Главная
+        </a>
+        <a href="catalog.html" style="display: block; margin-bottom: 20px;">
+            Каталог
+        </a>
+        <a href="categories.html" style="display: block; margin-bottom: 20px;">
+            Категории
+        </a>
+        <a href="catalog-item.html" style="display: block; margin-bottom: 20px;">
+            Карточка товара
+        </a>
+        <a href="service.html" style="display: block; margin-bottom: 20px;">
+            Услуги и сервис
+        </a>
+
+
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

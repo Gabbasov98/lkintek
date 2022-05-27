@@ -1,0 +1,125 @@
+<!DOCTYPE html> @@include('components/page-blocks/_head.html',{ "lang":"ru", "title":"Каталог", "description":"", "keywords":"",})
+
+<body>
+    <div class="wrapper">
+        @@include('components/page-blocks/_header.html')
+        <main class="content">
+
+            <section class='categories'>
+                <div class='container'>
+                    <div class="categories__title display2">Категории</div>
+                    <div class='categories__items'>
+                        <a href="" iv class="categories__item">
+                            <div class="categories__item-icon">
+                                <img src="img/category7.webp" alt="">
+                            </div>
+                            <div class="categories__item-title">Моющие средства</div>
+                        </a>
+                        <a href="" class="categories__item">
+                            <div class="categories__item-icon">
+                                <img src="img/category8.webp" alt="">
+                            </div>
+                            <div class="categories__item-title">Инвентарь</div>
+                        </a>
+                        <a href="" class="categories__item">
+                            <div class="categories__item-icon">
+                                <img src="img/category9.webp" alt="">
+                            </div>
+                            <div class="categories__item-title">Индивидуальная защита</div>
+                        </a>
+                        <a href="" class="categories__item">
+                            <div class="categories__item-icon">
+                                <img src="img/category10.webp" alt="">
+                            </div>
+                            <div class="categories__item-title">Грязезащита</div>
+                        </a>
+                        <a href="" class="categories__item">
+                            <div class="categories__item-icon">
+                                <img src="img/category11.webp" alt="">
+                            </div>
+                            <div class="categories__item-title">Дезинфицирующие коврики</div>
+                        </a>
+                        <a href="" class="categories__item">
+                            <div class="categories__item-icon">
+                                <img src="img/category12.webp" alt="">
+                            </div>
+                            <div class="categories__item-title">Оборудование</div>
+                        </a>
+                        <a href="" class="categories__item">
+                            <div class="categories__item-icon">
+                                <img src="img/category13.webp" alt="">
+                            </div>
+                            <div class="categories__item-title">Протирочная продукция</div>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+
+
+            <section class='consult'>
+                <div class='container'>
+                    <div class='consult__inner'>
+                        <img src="img/mail.svg" alt="" class="consult__mail">
+                        <div class="consult__title">Хотите получать актуальную информацию профессиональных моющих средствах?</div>
+                        <form action="" class="consult__form">
+                            <fieldset class='consult__form-group form-group'>
+                                <input type='email' placeholder="Ваша почта" />
+                            </fieldset>
+                            <button class="consult__btn btn btn-blue">Подписаться</button>
+                        </form>
+                        <div class="consult__hint">Небольшая рассылка 1 раз в неделю о новых разработках Кинтек</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class='collection collection--catalog'>
+                <div class='container'>
+                    <div class='collection__top'>
+                        <div class="collection__title display2">Вы недавно смотрели</div>
+                    </div>
+
+                    <div class="collection__slider">
+                        <div class='swiper-container'>
+                            <div class='swiper-wrapper'>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product","sale":""})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product2","sale":""})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product3","sale":""})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product4","sale":""})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product5","sale":""})
+                                </div>
+                                <div class='swiper-slide'>
+                                    @@include('components/cards/_catalog-card.html',{"img":"product","sale":""})
+                                </div>
+                            </div>
+                        </div>
+                        <div class='swiper-button-prev'>
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.84375 2.57452L3.4184 6.99987L7.84375 11.4252L6.1674 13.1016L0.0657081 6.99987L6.1674 0.898171L7.84375 2.57452Z" fill="#44A8FF"/>
+                            </svg>
+                        </div>
+                        <div class='swiper-button-next'>
+                            <svg width="8" height="14" viewBox="0 0 8 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M0.15625 2.57452L4.5816 6.99987L0.15625 11.4252L1.8326 13.1016L7.93429 6.99987L1.8326 0.898171L0.15625 2.57452Z" fill="#44A8FF"/>
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        @@include('components/page-blocks/_footer.html')
+    </div>
+
+    @@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

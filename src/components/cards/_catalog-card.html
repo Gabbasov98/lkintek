@@ -1,0 +1,22 @@
+<div class="catalog-card">
+    <div class="catalog-card__top">
+        @@if(sale === "true"){
+        <span class="catalog-card__sale">-10%</span> }
+        <a href="" class="catalog-card__img">
+            <img src="img/@@img.webp" alt="">
+        </a>
+    </div>
+    <a href="" class="catalog-card__title">Химитек Антисептик-Гель, 1л</a>
+    <div class="catalog-card__desc">Концентрированное многофункциональное жидкое пенное нейтральное дезинфицирующее средство</div>
+    <div class="catalog-card__bottom">
+        <div class="catalog-card__prices">
+            @@if(sale === "true"){
+            <div class="catalog-card__price-new">590 ₽</div>
+            <div class="catalog-card__price-old">1200 ₽</div>
+            } @@if(sale === ""){
+            <div class="catalog-card__price">210 ₽</div>}
+
+        </div>
+        <button class="catalog-card__btn btn btn-blue">Купить</button>
+    </div>
+</div>

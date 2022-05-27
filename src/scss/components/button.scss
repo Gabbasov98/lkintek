@@ -1,0 +1,76 @@
+@import "../vars";
+.btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all ease-out .225s;
+    padding: 0;
+    &:focus {
+        box-shadow: none;
+    }
+}
+
+.btn-blue {
+    color: #FFFFFF;
+    background-color: $primary;
+    &:hover {
+        color: #FFFFFF;
+        background-color: $blue;
+    }
+}
+
+.btn-white {
+    color: #1E303D;
+    background: #FFFFFF;
+    &:hover {
+        color: #1E303D;
+        background-color: darken(#fff, 10%);
+    }
+}
+
+.btn-blue-outline {
+    border: 1px solid $primary;
+    color: $primary;
+    &:hover {
+        color: #fff;
+        background-color: $primary;
+    }
+}
+
+.blue-link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 15px;
+    color: #2D9AE9;
+    svg {
+        margin-right: 2px;
+    }
+    &:hover {
+        color: $primary;
+        &:hover {
+            path {
+                fill: $primary;
+            }
+        }
+    }
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    transition: all .225s;
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+    background: #FFFFFF;
+    border: 0.813559px solid $primary;
+    box-shadow: 0px 3.25424px 11.3898px rgba(0, 0, 0, 0.08);
+    &:hover {
+        background: $primary;
+        border-color: $primary;
+        path {
+            fill: #fff;
+        }
+    }
+}
