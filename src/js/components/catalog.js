@@ -75,10 +75,12 @@ $(document).ready(function() {
 
     $(".catalog__filter-btn").click(function() {
         $(".filter").addClass("filter--active")
+        $("body").addClass("fixed-body")
     })
 
     $(".filter-bg").click(function() {
         $(".filter").removeClass("filter--active")
+        $("body").removeClass("fixed-body")
     })
 
     $(".catalog-item__tab").click(function() {

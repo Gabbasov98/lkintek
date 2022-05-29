@@ -292,7 +292,9 @@
 
 .info {
     padding: 37px 0;
-    &__title {
+    &__title,
+    h1,
+    h2 {
         font-weight: bold;
         font-size: 24px;
         line-height: 110%;
@@ -300,8 +302,7 @@
         margin-bottom: 15px;
     }
     &__inner {
-        display: flex;
-        justify-content: space-between;
+        column-count: 2;
     }
     &__left,
     &__right {
@@ -411,7 +412,7 @@
     }
     .info {
         &__inner {
-            display: block;
+            column-count: 1;
         }
         &__left,
         &__right {
@@ -671,7 +672,9 @@
     }
     .info {
         padding: 26px 0;
-        &__title {
+        &__title,
+        h1,
+        h2 {
             margin-bottom: 10px;
         }
     }

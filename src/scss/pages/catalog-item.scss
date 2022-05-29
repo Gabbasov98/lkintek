@@ -1,5 +1,5 @@
 .catalog-item {
-    padding-top: 28px;
+    padding: 28px 0 32px;
     &__inner {
         display: flex;
     }
@@ -181,6 +181,88 @@
                     height: 100%;
                     object-fit: cover;
                 }
+            }
+        }
+    }
+    &__newfeedback {
+        &-form {
+            margin-top: 23px;
+            &-group {
+                margin-bottom: 15px;
+                input,
+                textarea {
+                    width: 270px;
+                    height: 40px;
+                    padding: 0 15px;
+                    border: 1px solid #DCDCDC;
+                    border-radius: 6px;
+                }
+                textarea {
+                    padding: 9px 15px;
+                    height: 133px;
+                    width: 100%;
+                    resize: none;
+                }
+            }
+        }
+        &-buttons {
+            display: flex;
+            align-items: center;
+        }
+        &-btn {
+            flex-grow: 1;
+            height: 50px;
+            margin-right: 15px;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+        }
+        &-img {
+            flex-shrink: 0;
+            width: 174px;
+            height: 50px;
+            background: linear-gradient(0deg, rgba(0, 166, 204, 0.1), rgba(0, 166, 204, 0.1)), #FFFFFF;
+            font-weight: 500;
+            font-size: 16px;
+            line-height: 20px;
+            color: #00A7CD;
+            position: relative;
+            cursor: pointer;
+            input {
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 100%;
+                cursor: pointer;
+                opacity: 0;
+            }
+            svg {
+                margin-right: 8px;
+            }
+        }
+        &-preview {
+            margin-top: 15px;
+            gap: 15px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+            &-item {
+                border: 1px solid #1DAFD1;
+                border-radius: 12px;
+                position: relative;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                img {
+                    border-radius: 12px;
+                    max-width: 100%;
+                    max-height: 100%;
+                }
+            }
+            &-remove {
+                position: absolute;
+                top: 10px;
+                right: 10px;
             }
         }
     }
@@ -438,6 +520,11 @@
         &__calc {
             margin-top: 20px;
         }
+        &__newfeedback {
+            &-preview {
+                grid-template-columns: 1fr 1fr 1fr;
+            }
+        }
     }
 }
 
@@ -447,6 +534,19 @@
             &-big {
                 height: 320px;
                 padding: 25px 0;
+            }
+        }
+        &__newfeedback {
+            &-buttons {
+                flex-wrap: wrap;
+            }
+            &-btn {
+                width: 100%;
+                margin-right: 0;
+            }
+            &-img {
+                width: 100%;
+                margin-top: 15px;
             }
         }
     }
