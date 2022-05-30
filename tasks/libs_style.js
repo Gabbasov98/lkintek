@@ -3,6 +3,7 @@ const plugins = [
     'node_modules/nouislider/dist/nouislider.css',
     'src/libs/css/nice-select.css',
     'src/libs/css/jquery.fancybox.min.css',
+    'node_modules/bootstrap/dist/css/bootstrap.css',
 ];
 
 const {

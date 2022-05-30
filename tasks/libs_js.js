@@ -5,6 +5,7 @@ const plugins = [
     'node_modules/nouislider/dist/nouislider.js',
     'src/libs/js/jquery.nice-select.min.js',
     'src/libs/js/jquery.fancybox.min.js',
+    'node_modules/bootstrap/dist/js/bootstrap.js',
 ];
 const {
     src,

@@ -75,6 +75,15 @@
             color: $blue;
         }
     }
+    &__by {
+        font-size: 16px;
+        line-height: 150%;
+        color: #5c5c5c;
+        a {
+            color: rgba(10, 37, 51, 0.6);
+            text-decoration: underline;
+        }
+    }
 }
 
 .footer-top {
@@ -88,6 +97,11 @@
 
 .footer-bottom {
     padding: 15px 0;
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
 }
 
 @media screen and (max-width: 992px) {
@@ -163,6 +177,9 @@
         &__links {
             display: none;
         }
+        &__by {
+            margin-top: 10px;
+        }
     }
     .footer-top {
         padding: 19px 0 70px;
@@ -170,5 +187,8 @@
     .footer-bottom {
         text-align: center;
         padding: 24px 0 29px;
+        &__inner {
+            display: block;
+        }
     }
 }

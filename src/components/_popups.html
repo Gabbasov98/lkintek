@@ -1,0 +1,60 @@
+<div class="modal in fade" id="addFeedback" aria-hidden="true">
+    <div class="modal-dialog">
+        <button type="button" class="modal__close" data-bs-dismiss="modal" aria-label="Close">
+            <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.0552 5.41669L12.9993 11.4725L6.94352 5.41669L5.41602 6.94419L11.4718 13L5.41602 19.0559L6.94352 20.5834L12.9993 14.5275L19.0552 20.5834L20.5827 19.0559L14.5268 13L20.5827 6.94419L19.0552 5.41669Z" fill="white"/>
+            </svg>
+        </button>
+
+        <div class="modal__content">
+            <div class="modal__title">Оставить отзыв</div>
+
+            <form action="" class="modal__form">
+                <fieldset class='modal__form-group form-group'>
+                    <input type='text' placeholder="Имя" />
+                </fieldset>
+                <fieldset class='modal__form-group form-group'>
+                    <textarea placeholder="">Текст отзыва</textarea>
+                </fieldset>
+
+                <div class="modal__subtitle">Добавьте фотографии</div>
+                <div class="modal__upload">
+                    <div class="modal__upload-input">
+                        <input type="file">
+                        <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M23.75 26.75H6.25C4.86929 26.75 3.75 25.6307 3.75 24.25V6.75C3.75 5.36929 4.86929 4.25 6.25 4.25H23.75C25.1307 4.25 26.25 5.36929 26.25 6.75V24.25C26.25 25.6307 25.1307 26.75 23.75 26.75ZM6.25 6.75V24.25H23.75V6.75H6.25ZM22.5 21.75H7.5L11.25 16.75L12.5 18L16.25 13L22.5 21.75ZM10.625 14.25C9.58947 14.25 8.75 13.4105 8.75 12.375C8.75 11.3395 9.58947 10.5 10.625 10.5C11.6605 10.5 12.5 11.3395 12.5 12.375C12.5 13.4105 11.6605 14.25 10.625 14.25Z" fill="#2D9AE9"/>
+                        </svg>
+                    </div>
+                    <div class="modal__upload-hint">
+                        <div class="modal__upload-title">Нажмите на кнопку или перетащите фото в эту область</div>
+                        <div class="modal__upload-desc">до 10 изображений в формате PNG, JPEG</div>
+                    </div>
+                </div>
+                <div class="modal__images">
+                    <div class="modal__img">
+                        <img src="img/upload.webp" alt="">
+                        <button class="modal__img-remove btn">
+                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.83614 2.89288L4.67153 5.05749L2.50693 2.89288L1.96094 3.43888L4.12554 5.60348L1.96094 7.76809L2.50693 8.31408L4.67153 6.14947L6.83614 8.31408L7.38213 7.76809L5.21753 5.60348L7.38213 3.43888L6.83614 2.89288Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                    <div class="modal__img">
+                        <img src="img/upload.webp" alt="">
+                        <button class="modal__img-remove btn">
+                            <svg width="10" height="11" viewBox="0 0 10 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.83614 2.89288L4.67153 5.05749L2.50693 2.89288L1.96094 3.43888L4.12554 5.60348L1.96094 7.76809L2.50693 8.31408L4.67153 6.14947L6.83614 8.31408L7.38213 7.76809L5.21753 5.60348L7.38213 3.43888L6.83614 2.89288Z" fill="white"/>
+                            </svg>
+                        </button>
+                    </div>
+                </div>
+                <button class="modal__btn btn btn-blue">Отправить</button>
+            </form>
+        </div>
+
+    </div>
+</div>
+
+
+
+<!-- <div class="modal-backdrop show"></div> -->

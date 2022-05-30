@@ -7,6 +7,7 @@
     position: relative;
     margin: 0;
     margin-bottom: 30px;
+    textarea,
     input {
         padding: 0 27px;
         height: 47px;
@@ -22,6 +23,10 @@
         &:focus {
             background: #EBF6FF;
         }
+    }
+    textarea {
+        height: 117px;
+        resize: none;
     }
     &__error {
         white-space: nowrap;
